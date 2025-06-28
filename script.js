@@ -10,7 +10,7 @@ function calculateBMI() {
     BMI = BMI.toFixed(2);
     let category = "";
     let color = "";
-console.log(BMI)
+
     if (BMI < 18.5) {
       category = "Underweight 😟";
       color = "#1E90FF";
