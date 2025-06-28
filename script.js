@@ -7,9 +7,10 @@ function calculateBMI() {
 } else {
     let height = heightCm / 100;
     let BMI = weight / (height ** 2);
+    BMI = BMI.toFixed(2);
     let category = "";
     let color = "";
-
+console.log(BMI)
     if (BMI < 18.5) {
       category = "Underweight 😟";
       color = "#1E90FF";
@@ -27,8 +28,8 @@ function calculateBMI() {
     let result = document.getElementById("result");
     let container = document.getElementById('container');
 
-    
-    result.textContent = `Your BMI is: ${BMI.toFixed(2)}\n${category}`;
+
+    result.textContent = `Your BMI is: ${BMI}\n${category}`;
     container.style.background = color;
   }
 }
