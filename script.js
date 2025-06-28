@@ -6,7 +6,7 @@ function calculateBMI() {
     alert("❌ Please enter valid numbers for weight and height.");
 } else {
     let height = heightCm / 100;
-    let BMI = weight / height ** 2;
+    let BMI = weight / (height ** 2);
     let category = "";
     let color = "";
 
@@ -26,7 +26,8 @@ function calculateBMI() {
 
     let result = document.getElementById("result");
     let container = document.getElementById('container');
-    result.textContent = `Your BMI is: ${BMI.toFixed()}\n${category}`;
+
+    result.textContent = `Your BMI is: ${BMI.toFixed(2)}\n${category}`;
     container.style.background = color;
   }
 }
