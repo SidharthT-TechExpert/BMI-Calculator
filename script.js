@@ -27,6 +27,7 @@ function calculateBMI() {
     let result = document.getElementById("result");
     let container = document.getElementById('container');
 
+    
     result.textContent = `Your BMI is: ${BMI.toFixed(2)}\n${category}`;
     container.style.background = color;
   }
