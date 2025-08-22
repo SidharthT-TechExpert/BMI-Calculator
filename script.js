@@ -42,7 +42,7 @@ function calculateBMI() {
       color = "#ffc107";
     } else if (BMI >= 30) {
       category = "Obese 😟";
-      color = "#dc3545";
+      color = "#dc3545"; 
     }
 
     // Update DOM
